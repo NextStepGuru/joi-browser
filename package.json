@@ -1,6 +1,6 @@
 {
-  "name": "joi-browser",
-  "version": "13.4.0",
+  "name": "@blackfisk/joi-browser",
+  "version": "14.3.1",
   "description": "joi object schema validation bundled for the browser",
   "main": "./dist/joi-browser.js",
   "scripts": {
@@ -8,7 +8,7 @@
     "build-webpack": "webpack && uglifyjs dist/joi-browser.js -c warnings=false -m | ntee dist/joi-browser.min.js | ngzip > dist/joi-browser.min.js.gz",
     "test": "karma start --single-run"
   },
-  "author": "Jeff Barczewski",
+  "author": "Jeremy R DeYoung",
   "license": "BSD-3-Clause",
   "babelNotes": {
     "plugins": "Use loose mode for es2015-classes and proto-to-assign for IE < 11 compatibility. See https://github.com/jeffbski/joi-browser/issues/11"
@@ -17,6 +17,7 @@
     "plugins": [
       "transform-es2015-modules-commonjs",
       "transform-object-assign",
+      "transform-runtime",
       "transform-proto-to-assign",
       [
         "transform-es2015-classes",
@@ -43,10 +44,11 @@
     "babel-plugin-transform-es2015-modules-commonjs": "^6.2.0",
     "babel-plugin-transform-object-assign": "^6.8.0",
     "babel-plugin-transform-proto-to-assign": "^6.9.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-es2015": "^6.1.18",
     "core-js": "^2.4.1",
     "expect": "^1.20.2",
-    "joi": "13.4.0",
+    "joi": "^14.3.1",
     "json-loader": "^0.5.4",
     "karma": "^2.0.2",
     "karma-chrome-launcher": "^2.2.0",
