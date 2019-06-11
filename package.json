@@ -1,6 +1,6 @@
 {
   "name": "@blackfisk/joi-browser",
-  "version": "14.3.1",
+  "version": "14.3.2",
   "description": "joi object schema validation bundled for the browser",
   "main": "./dist/joi-browser.js",
   "scripts": {
